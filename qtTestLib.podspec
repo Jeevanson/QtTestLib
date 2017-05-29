@@ -2,7 +2,6 @@ Pod::Spec.new do |s|
   s.name = 'QtTestLib'
   s.version = '4.4.0'
   s.license = 'MIT'
-  s.summary = 'Elegant HTTP Networking in Swift'
   s.homepage = 'https://github.com/Jeevanson/QtTestLib'
   s.source = { :git => 'https://github.com/Jeevanson/QtTestLib.git', :tag => s.version }
 
@@ -11,5 +10,4 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
   s.source_files = "*"
- echo "2.3" > .swift-version
 end
