@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = 'Alamofire'
+  s.name = 'QtTestLib'
   s.version = '1.0.0'
   s.license = 'MIT'
   s.summary = 'Elegant HTTP Networking in Swift'
