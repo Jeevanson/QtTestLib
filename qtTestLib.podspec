@@ -41,8 +41,8 @@ Pod::Spec.new do |s|
   #s.dependency 'MBProgressHUD', '~> 0.9.0'
 
   # 8
-  s.source_files = "QtTestLib/**/*.{swift}"
+  #s.source_files = "QtTestLib/**/*.{swift}"
 
   # 9
-  s.resources = "QtTestLib/**/*.{png,jpeg,jpg,storyboard,xib}"
+  #s.resources = "QtTestLib/**/*.{png,jpeg,jpg,storyboard,xib}"
 end
