@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.name = "QtTestLib"
   s.summary = "QtTestLib lets a user select an ice cream flavor."
   s.requires_arc = true
+  s.homepage = 'https://github.com/Jeevanson/QtTestLib'
 
   # 2
   s.version = "0.1.0"
@@ -28,7 +29,7 @@ Pod::Spec.new do |s|
 
 
   # 6 - Replace this URL with your own Git URL from "Quick Setup"
-  s.source = { :git => "[Your RWPickFlavor Git URL Goes Here]", :tag => "#{s.version}"}
+  s.source = { :git => "https://github.com/Jeevanson/QtTestLib.git", :tag => "#{s.version}"}
 
   # For example,
   # s.source = { :git => "https://github.com/JRG-Developer/RWPickFlavor.git", :tag => "#{s.version}"}
