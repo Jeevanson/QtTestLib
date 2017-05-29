@@ -4,6 +4,7 @@ Pod::Spec.new do |s|
   s.license = 'MIT'
   s.homepage = 'https://github.com/Jeevanson/QtTestLib'
   s.source = { :git => 'https://github.com/Jeevanson/QtTestLib.git', :tag => s.version }
+  s.requires_arc       = true
 
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
