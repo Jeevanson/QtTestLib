@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.license = 'MIT'
   s.homepage = 'https://github.com/Jeevanson/QtTestLib'
   s.source = { :git => 'https://github.com/Jeevanson/QtTestLib.git', :tag => s.version, :submodules => true  }
-  s.requires_arc       = false
+  s.requires_arc       = true
   s.summary = 'Testing'
   s.authors = { 'Encore' => 'sdharmar@encoress.com' }
 
