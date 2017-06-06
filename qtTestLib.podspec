@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version = '4.4.0'
   s.license = 'MIT'
   s.homepage = 'https://github.com/Jeevanson/QtTestLib'
-  s.source = { :git => 'https://github.com/Jeevanson/QtTestLib.git', :tag => s.version, :submodules => true  }
+  s.source = { :git => 'https://github.com/Jeevanson/QtTestLib.git', :tag => s.version  }
   s.requires_arc       = true
   s.summary = 'Testing'
   s.authors = { 'Encore' => 'sdharmar@encoress.com' }
@@ -12,13 +12,13 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.10'
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
-  s.source_files = '*.h'
+  s.source_files = 'QtTestLib/*.h'
   #s.source_files = '**/*'
   
   #s.default_subspec = 'QtTestLib'
  # s.ios.preserve_paths      = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
   s.ios.vendored_library = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
-  s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => '"QTLIB_IOS"' }
+ # s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => '"QTLIB_IOS"' }
 
  # s.vendored_libraries = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
   
