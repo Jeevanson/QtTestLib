@@ -12,14 +12,14 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.10'
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
-  #s.source_files = '**/*'
+  s.source_files = '**/*'
   #s.default_subspec = 'QtTestLib'
-  #s.ios.vendored_library = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
-  #s.vendored_libraries = 'libQtTestLib.a'
-   s.subspec 'QtTestLib' do |ss|
-    ss.source_files = '**/*'
-    ss.platform   = :ios, '8.0'
-    ss.vendored_libraries = "build-QtTestLib-iphonesimulator/libQtTestLib.a"
-  end
+  s.ios.vendored_library = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
+  s.vendored_libraries = 'libQtTestLib.a'
+#    s.subspec 'QtTestLib' do |ss|
+#     ss.source_files = '**/*'
+#     ss.platform   = :ios, '8.0'
+#     ss.vendored_libraries = "build-QtTestLib-iphonesimulator/libQtTestLib.a"
+#   end
   
 end
