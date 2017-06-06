@@ -14,9 +14,9 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '2.0'
   s.source_files = '**/*.h'
   #s.default_subspec = 'QtTestLib'
-  s.ios.preserve_paths      = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
+ # s.ios.preserve_paths      = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
   s.ios.vendored_library = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
-  s.vendored_libraries = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
+ # s.vendored_libraries = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
   
 #    s.subspec 'QtTestLib' do |ss|
 #     ss.source_files = '**/*'
