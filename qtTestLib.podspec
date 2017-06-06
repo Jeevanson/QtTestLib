@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source_files = '**/*'
   #s.default_subspec = 'QtTestLib'
   s.ios.vendored_library = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
-  
+  s.vendored_libraries = 'libQtTestLib.a'
 #    s.subspec 'QtTestLib' do |ss|
 #      s.source_files = '**/*'
 #     ss.platform   = :ios, '8.0'
