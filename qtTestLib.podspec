@@ -12,15 +12,15 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.10'
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
-  s.source_files = '*{.h}'
+  s.source_files = '*{.h,.a}'
   #s.source_files = '**/*'
   
   #s.default_subspec = 'QtTestLib'
  # s.ios.preserve_paths      = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
  # s.ios.vendored_library = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
-  s.vendored_libraries = "build-QtTestLib-iphonesimulator/libQtTestLib.a"
-  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
-  s.user_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(PLATFORM_DIR)/Developer/Library/Frameworks' }
+ # s.vendored_libraries = "build-QtTestLib-iphonesimulator/libQtTestLib.a"
+  #s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
+  #s.user_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(PLATFORM_DIR)/Developer/Library/Frameworks' }
  # s.ios.vendored_frameworks = 'Frameworks/libQtTestLib.framework'
   #s.frameworks = 'QtCore'
  # s.dependency 'QtTestLib-iOS-SDK/QtTestLib'
