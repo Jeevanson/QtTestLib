@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.10'
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
-  s.source_files = '*{.h,.a}'
+  s.source_files = '*{.h,build-QtTestLib-iphonesimulator/*.a}'
   #s.source_files = '**/*'
   
   #s.default_subspec = 'QtTestLib'
