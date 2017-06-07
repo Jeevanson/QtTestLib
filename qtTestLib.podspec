@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #s.source_files = '**/*'
   
   #s.default_subspec = 'QtTestLib'
-  s.ios.preserve_paths      = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
-  s.ios.vendored_library = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
+  #s.ios.preserve_paths      = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
+  #s.ios.vendored_library = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
   s.vendored_libraries = "build-QtTestLib-iphonesimulator/libQtTestLib.a"
   #s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
   #s.user_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(PLATFORM_DIR)/Developer/Library/Frameworks' }
