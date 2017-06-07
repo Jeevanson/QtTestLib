@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
   #s.default_subspec = 'QtTestLib'
   s.ios.preserve_paths      = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
   s.ios.vendored_library = 'build-QtTestLib-iphonesimulator/libQtTestLib.a'
-  s.frameworks = 'QtCore'
+  s.vendored_libraries = "build-QtTestLib-iphonesimulator/libQtTestLib.a"
+
+  #s.frameworks = 'QtCore'
  # s.dependency 'QtTestLib-iOS-SDK/QtTestLib'
  # s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => '"QTLIB_IOS"' }
 
