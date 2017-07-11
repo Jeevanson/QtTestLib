@@ -18,16 +18,11 @@
 //}
 
 node {
-//	stage 'Checkout'
-//		checkout scm
-
-//	stage 'Build'
-		echo 'jeevan_checkout executing..'
-//		checkout scm
-
-//	stage 'Archive'
-		//archive 'ProjectName/bin/Release/**'
-sh '/Users/DTM005/Documents/Jeevanson/hello.sh'
+    sh 'ls -l'
+    dir ('foo') {
+        writeFile file:'dummy', text:''
+    }
+    sh 'ls -l'
 }
 
 
