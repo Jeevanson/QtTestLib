@@ -5,7 +5,6 @@ pipeline {
         stage('checkout') {
             steps {
                 echo 'jeevan_checkout executing..'
-		checkout scm
             }
         }
         stage('Build') {
