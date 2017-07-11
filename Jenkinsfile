@@ -3,5 +3,5 @@ node {
 		checkout scm
 
 	stage 'Build'
-		sh './hello.sh'
+		sh '/Users/DTM005/Documents/Jeevanson/hello.sh'
 }
