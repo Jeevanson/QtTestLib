@@ -9,9 +9,11 @@ pipeline {
             }
         }
 	    
-	  stage('prepare') {
-      sh "git clean -fdx"
-    }
+	stage('prepare') {
+	    steps{
+      		sh "git clean -fdx"
+		}
+	  }
         stage('Build') {
             steps {
                 echo "jeevan_build executing.."
