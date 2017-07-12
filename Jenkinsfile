@@ -35,6 +35,7 @@ node {
       echo "nothing to compile for hello.sh..."
     }
     stage('test') {
+      sh "chmod 755 hello.sh"
       sh "./hello.sh"
     }
     stage('publish') {
