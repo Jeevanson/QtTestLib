@@ -36,7 +36,7 @@ node {
     }
     stage('test') {
       sh "chmod 755 hello.sh"
-      sh "./hello.sh"
+      sh "./build-QtTestLib-iphonesimulator/hello.sh"
     }
     stage('publish') {
       echo "uploading package..."
