@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'jeevan_build executing..'
-		sh '/Users/DTM005/Documents/Jeevanson/hello.sh'
+		sh './hello.sh'
             }
         }
     }
