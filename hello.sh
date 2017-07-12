@@ -1,3 +1,3 @@
 echo "hello Jeevanson"
-mkdir -p /Users/DTM005/Documents/Jeevanson/shellfolder
+mkdir -p shellfolder
 echo "folder created"
