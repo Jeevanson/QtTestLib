@@ -1,34 +1,50 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('checkout') {
-            steps {
-                echo 'jeevan_checkout executing..'
-		checkout scm
-            }
-        }
-	    
-	stage('prepare') {
-	    steps{
-      		sh "git clean -fdx"
-		}
-	  }
-        stage('Build') {
-            steps {
-                echo "jeevan_build executing.."
-		 sh "./hello.sh"
-            }
-        }
-    }
-}
-
-//node {
-//    sh 'ls -l'
-//    dir ('foo') {
-//        writeFile file:'dummy', text:''
+//pipeline {
+//    agent any
+//
+//    stages {
+//        stage('checkout') {
+//            steps {
+//                echo 'jeevan_checkout executing..'
+//		checkout scm
+//            }
+//        }
+//	    
+//	stage('prepare') {
+//	    steps{
+//      		sh "git clean -fdx"
+//		}
+//	  }
+//        stage('Build') {
+//            steps {
+//                echo "jeevan_build executing.."
+//		 sh "./hello.sh"
+//            }
+//        }
 //    }
-//    sh 'ls -l'
 //}
+
+node {
+  try {
+    stage('checkout') {
+      checkout scm
+    }
+    stage('prepare') {
+      sh "git clean -fdx"
+    }
+    stage('compile') {
+      echo "nothing to compile for hello.sh..."
+    }
+    stage('test') {
+      sh "./hello.sh"
+    }
+    stage('publish') {
+      echo "uploading package..."
+    }
+  } finally {
+    stage('cleanup') {
+      echo "doing some cleanup..."
+    }
+  }
+}
 
 
