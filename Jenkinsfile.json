@@ -1,28 +1,28 @@
-//pipeline {
-//    agent any
-//
-//    stages {
-//        stage('checkout') {
-//            steps {
-//                echo 'jeevan_checkout executing..'
-//		checkout scm
-//            }
-//        }
-//        stage('Build') {
-//            steps {
-//                echo 'jeevan_build executing..'
-//		sh '/Users/DTM005/Documents/Jeevanson/hello.sh'
-//            }
-//        }
-//    }
-//}
+pipeline {
+    agent any
 
-node {
-    sh 'ls -l'
-    dir ('foo') {
-        writeFile file:'dummy', text:''
+    stages {
+        stage('checkout') {
+            steps {
+                echo 'jeevan_checkout executing..'
+		checkout scm
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'jeevan_build executing..'
+		sh '/Users/DTM005/Documents/Jeevanson/hello.sh'
+            }
+        }
     }
-    sh 'ls -l'
 }
+
+//node {
+//    sh 'ls -l'
+//    dir ('foo') {
+//        writeFile file:'dummy', text:''
+//    }
+//    sh 'ls -l'
+//}
 
 
