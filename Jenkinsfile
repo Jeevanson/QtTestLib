@@ -8,6 +8,10 @@ pipeline {
 		checkout scm
             }
         }
+	    
+	  stage('prepare') {
+      sh "git clean -fdx"
+    }
         stage('Build') {
             steps {
                 echo "jeevan_build executing.."
