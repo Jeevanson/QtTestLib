@@ -10,8 +10,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'jeevan_build executing..'
-		sh './hello.sh'
+                echo "jeevan_build executing.."
+		 sh "./hello.sh"
             }
         }
     }
