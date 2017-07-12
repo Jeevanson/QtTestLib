@@ -23,6 +23,31 @@
 //    }
 //}
 
+//node {
+//  try {
+//    stage('checkout') {
+//      checkout scm
+//    }
+//    stage('prepare') {
+//      sh "git clean -fdx"
+//    }
+//    stage('compile') {
+//      echo "nothing to compile for hello.sh..."
+//    }
+//    stage('test') {
+//      sh "chmod 755 hello.sh"
+//      sh "./build-QtTestLib-iphonesimulator/hello.sh"
+//    }
+//    stage('publish') {
+//      echo "uploading package..."
+//    }
+//  } finally {
+//    stage('cleanup') {
+//      echo "doing some cleanup..."
+//    }
+//  }
+//}
+
 node {
   try {
     stage('checkout') {
@@ -31,12 +56,12 @@ node {
     stage('prepare') {
       sh "git clean -fdx"
     }
-    stage('compile') {
-      echo "nothing to compile for hello.sh..."
+      stage('compile') {
+      echo "nothing to compile right now..."
     }
     stage('test') {
-      sh "chmod 755 hello.sh"
-      sh "./build-QtTestLib-iphonesimulator/hello.sh"
+    sh “cd build-QtTestLib-iphonesimulator"
+    sh “./testscript.sh"
     }
     stage('publish') {
       echo "uploading package..."
@@ -47,5 +72,6 @@ node {
     }
   }
 }
+
 
 
